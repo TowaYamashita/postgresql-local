@@ -1,8 +1,8 @@
 -- create DB
-CREATE DATABASE localdb; 
+-- CREATE DATABASE sample; 
 
 -- switch to created DB
-\c localdb
+-- \c sample
 
 -- create Scheme
 -- CREATE SCHEMA hogeschema;
