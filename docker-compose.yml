@@ -6,12 +6,14 @@ services:
     container_name: postgres
     command: -c 'config_file=/etc/postgresql/postgresql.conf'
     ports:
-      - 5432:5432
+      - 54321:5432
     volumes:
       - db-store:/var/lib/postgresql/data
       - ./script:/docker-entrypoint-initdb.d
       - ./config/postgresql.conf:/etc/postgresql/postgresql.conf
     environment:
-      - POSTGRES_PASSWORD=postgresql
+      - POSTGRES_DB=localdb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
 volumes:
   db-store:
