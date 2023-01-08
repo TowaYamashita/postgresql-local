@@ -3,7 +3,8 @@
 |||
 |:--|:--|
 |postgresql|14|
-|port|5432|
+|port(local side)|54321|
+|port(container side)|5432|
 
 |||
 |:--|:--|
